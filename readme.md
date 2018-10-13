@@ -15,18 +15,17 @@ The ForecastModule is the class you want to connect to your project. It provides
 
 The forecast methods and the combination strategy is defined in the forecast.properties file.
 
-´´´
-ForecastModule module = new ForecastModule();
-module.addValue(1.0, 123.12);
-module.addValue(2.0, 13.1);
-module.addValue(3.0, 22.0);
-float forecast = module.combinedForecast(3.0, 1, 4.0);
+<pre><code>ForecastModule module = new ForecastModule();
+  module.addValue(1.0, 123.12);
+  module.addValue(2.0, 13.1);
+  module.addValue(3.0, 22.0);
+  float forecast = module.combinedForecast(3.0, 1, 4.0);
 
-float actualValue = 10.1;
-module.addValueToEvaluators(4.0, actualValue);
+  float actualValue = 10.1;
+  module.addValueToEvaluators(4.0, actualValue);
 
-float mase = module.combinedForecastError();
-´´´
+  float mase = module.combinedForecastError();
+</pre></code>
 
 ### Prerequisites
 
